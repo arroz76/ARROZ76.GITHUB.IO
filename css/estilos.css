@@ -224,6 +224,13 @@ body {
     transform: scale(1.05);
 }
 
+.info-lado a, 
+a[href^="tel"],
+a[href^="https://wa.me"] {
+    color: var(--amarillo) !important;
+    text-decoration: none !important;
+}
+
 @media (max-width: 768px) {
     .nav-buscador {
         display: none;
