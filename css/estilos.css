@@ -1,379 +1,246 @@
-:root {
-    --negro-puro: #000000;
-    --gris-gunmetal: #121315;
-    --amarillo: #F1D600;
-    --blanco: #e5e5e5;
-    --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ :root { --negro-puro: #000000; --gris-gunmetal: #121315; --amarillo: #F1D600; --blanco: #e5e5e5; --font: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(to bottom, var(--negro-puro) 0%, var(--gris-gunmetal) 50%, #0a0a0a 100%);
-    background-attachment: fixed;
-    color: var(--blanco);
-    font-family: var(--font);
-    line-height: 1.6;
-    overflow-x: hidden;
+background: linear-gradient(to bottom, var(--negro-puro) 0%, var(--gris-gunmetal) 50%, #0a0a0a 100%);
+background-attachment: fixed;
+color: var(--blanco);
+font-family: var(--font);
+line-height: 1.6;
+overflow-x: hidden;
 }
 
 .nav-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 5%;
-    background-color: var(--negro-puro);
-    border-bottom: 1px solid #1a1a1a;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 5%;
+background-color: var(--negro-puro);
+border-bottom: 1px solid #1a1a1a;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 .nav-logo img {
-    height: 30px;
+height: 30px;
 }
 
 .nav-buscador {
-    display: flex;
-    align-items: center;
-    background: #111;
-    border: 1px solid #333;
-    border-radius: 4px;
-    padding: 5px 15px;
-    width: 300px;
+display: flex;
+align-items: center;
+background: #111;
+border: 1px solid #333;
+border-radius: 4px;
+padding: 5px 15px;
+width: 300px;
 }
 
 .nav-buscador input {
-    background: transparent;
-    border: none;
-    color: white;
-    outline: none;
-    width: 100%;
-    font-size: 0.9rem;
+background: transparent;
+border: none;
+color: white;
+outline: none;
+width: 100%;
+font-size: 0.9rem;
 }
 
 .nav-buscador button {
-    background: transparent;
-    border: none;
-    color: var(--amarillo);
-    cursor: pointer;
+background: transparent;
+border: none;
+color: var(--amarillo);
+cursor: pointer;
 }
 
 .btn-login-nav,
 .btn-login-nav:visited {
-    color: var(--amarillo) !important;
-    text-decoration: none;
-    border: 1px solid var(--amarillo);
-    padding: 7px 18px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.85rem;
-    transition: 0.3s;
+color: var(--amarillo) !important;
+text-decoration: none;
+border: 1px solid var(--amarillo);
+padding: 7px 18px;
+border-radius: 5px;
+font-weight: bold;
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 0.85rem;
+transition: 0.3s;
 }
 
 .btn-login-nav:hover {
-    background: var(--amarillo);
-    color: black !important;
+background: var(--amarillo);
+color: black !important;
 }
 
 .inicio-corsair {
-    padding: 60px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+padding: 60px 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .corsair {
-    width: 350px;
-    height: auto;
-    margin-bottom: 20px;
+width: 350px;
+height: auto;
+margin-bottom: 20px;
 }
 
 .bienvenida h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    letter-spacing: 5px;
-    margin-bottom: 10px;
+font-size: clamp(1.5rem, 5vw, 3rem);
+letter-spacing: 5px;
+margin-bottom: 10px;
 }
 
 .contenedor-interactivo {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+display: flex;
+justify-content: center;
+gap: 40px;
+margin-top: 30px;
 }
 
 .card-producto {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
+text-decoration: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: transform 0.3s ease;
 }
 
 .card-producto img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-    background: transparent !important;
-    transition: all 0.3s ease;
+width: 100px;
+height: auto;
+margin-bottom: 10px;
+background: transparent !important;
+transition: all 0.3s ease;
 }
 
 .card-producto span {
-    color: #888;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+color: #888;
+font-weight: bold;
+text-decoration: none;
+letter-spacing: 1px;
+transition: color 0.3s ease;
 }
 
 .card-producto:hover {
-    transform: translateY(-5px);
+transform: translateY(-5px);
 }
 
 .card-producto:hover img {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 10px var(--amarillo));
+transform: scale(1.1);
+filter: drop-shadow(0 0 10px var(--amarillo));
 }
 
 .card-producto:hover span {
-    color: var(--amarillo);
+color: var(--amarillo);
 }
 
 .card-producto:visited span {
-    color: #888 !important;
+color: #888 !important;
 }
 
 .card-producto:hover:visited span {
-    color: var(--amarillo) !important;
+color: var(--amarillo) !important;
 }
 
 .producto-detalle {
-    padding: 60px 10%;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+padding: 60px 10%;
+display: flex;
+align-items: center;
+gap: 50px;
 }
 
 .imagen-lado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
 }
 
 .imagen-lado img {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease;
+width: 100%;
+max-width: 380px;
+height: auto;
+filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+transition: transform 0.3s ease;
 }
 
 .imagen-lado img:hover {
-    transform: scale(1.03);
+transform: scale(1.03);
 }
 
 .info-lado {
-    flex: 1;
+flex: 1;
 }
 
 .info-lado h2 {
-    font-size: 1.8rem;
-    color: var(--amarillo);
-    margin-bottom: 15px;
+font-size: 1.8rem;
+color: var(--amarillo);
+margin-bottom: 15px;
 }
 
 .lista-pro {
-    padding-left: 20px;
-    margin-bottom: 20px;
+padding-left: 20px;
+margin-bottom: 20px;
 }
 
 .lista-pro li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
+margin-bottom: 8px;
+font-size: 0.95rem;
 }
 
 .btn-corsair,
 .btn-corsair:visited {
-    margin-top: 25px;
-    display: inline-block;
-    color: var(--amarillo) !important;
-    border: 1px solid var(--amarillo);
-    padding: 10px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: 0.3s;
+margin-top: 25px;
+display: inline-block;
+color: var(--amarillo) !important;
+border: 1px solid var(--amarillo);
+padding: 10px 25px;
+text-decoration: none;
+font-weight: bold;
+font-size: 0.9rem;
+transition: 0.3s;
 }
 
 .btn-corsair:hover {
-    background: var(--amarillo);
-    color: black !important;
-    transform: scale(1.05);
+background: var(--amarillo);
+color: black !important;
+transform: scale(1.05);
 }
 
 .info-lado a,
 a[href^="tel"],
 a[href^="https://wa.me"] {
-    color: var(--amarillo) !important;
-    text-decoration: none !important;
+color: var(--amarillo) !important;
+text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
-    .nav-buscador {
-        display: none;
-    }
-
-    .producto-detalle {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-
-    .lista-pro {
-        text-align: left;
-        display: inline-block;
-    }
-
-    .contenedor-interactivo {
-        flex-direction: row;
-        gap: 20px;
-    }
+.nav-buscador {
+display: none;
 }
 
-.tablas-datos {
-    padding: 0 10% 40px;
-    min-height: 150px;
-}
-
-.tabla-producto {
-    display: none;
-    animation: fadeIn 0.4s ease;
-}
-
-.tabla-producto:target {
-    display: block;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.titulo-tabla {
+.producto-detalle {
+    flex-direction: column;
     text-align: center;
-    color: var(--amarillo);
-    font-size: 1.3rem;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    padding: 40px 5%;
 }
 
-.datos-tecnicos {
-    width: 100%;
-    border-collapse: collapse;
-    background: rgba(18, 19, 21, 0.9);
-    border: 2px solid var(--amarillo);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
-}
-
-.datos-tecnicos thead {
-    background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
-}
-
-.datos-tecnicos th {
-    color: var(--amarillo);
-    padding: 18px 15px;
-    text-align: center;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    border-bottom: 2px solid var(--amarillo);
-    border-right: 1px solid #333;
-    text-transform: uppercase;
-}
-
-.datos-tecnicos th:last-child {
-    border-right: none;
-}
-
-.datos-tecnicos td {
-    padding: 20px 15px;
-    text-align: center;
-    color: var(--blanco);
-    border-bottom: 1px solid #333;
-    border-right: 1px solid #333;
-    font-size: 0.95rem;
-}
-
-.datos-tecnicos td:last-child {
-    border-right: none;
-}
-
-.datos-tecnicos tbody tr:hover {
-    background: rgba(241, 214, 0, 0.08);
-}
-
-.btn-tabla {
+.lista-pro {
+    text-align: left;
     display: inline-block;
-    background: var(--amarillo);
-    color: #000 !important;
-    padding: 10px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    border: 2px solid var(--amarillo);
-    text-transform: uppercase;
 }
 
-.btn-tabla:hover {
-    background: transparent;
-    color: var(--amarillo) !important;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(241, 214, 0, 0.4);
+.contenedor-interactivo {
+    flex-direction: row;
+    gap: 20px;
 }
-
-
-@media (max-width: 768px) {
-    .tablas-datos {
-        padding: 0 5% 30px;
-    }
-
-    .titulo-tabla {
-        font-size: 1rem;
-        letter-spacing: 2px;
-    }
-
-    .datos-tecnicos th,
-    .datos-tecnicos td {
-        padding: 12px 8px;
-        font-size: 0.75rem;
-    }
-
-    .btn-tabla {
-        padding: 8px 12px;
-        font-size: 0.7rem;
-    }
 }
