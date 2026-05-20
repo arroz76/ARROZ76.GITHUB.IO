@@ -1,195 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corsair Gaming | Premium Gear</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-</head>
+<html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Corsair Gaming | Premium Gear</title> <link rel="stylesheet" href="css/estilos.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> </head> <body>
+<nav class="nav-principal">
+    <div class="nav-logo">
+        <img src="img/Logo-Corsair.png" alt="Corsair Logo">
+    </div>
 
-<body>
+    <div class="nav-buscador">
+        <input type="text" placeholder="Buscar perifericos...">
+        <button><i class="bi bi-search"></i></button>
+    </div>
 
-    <nav class="nav-principal">
-        <div class="nav-logo">
-            <img src="img/Logo-Corsair.png" alt="Corsair Logo">
-        </div>
+    <div class="nav-usuario">
+        <a href="login.html" class="btn-login-nav">
+            <i class="bi bi-person-circle"></i> Iniciar Sesion
+        </a>
+    </div>
+</nav>
 
-        <div class="nav-buscador">
-            <input type="text" placeholder="Buscar perifericos...">
-            <button><i class="bi bi-search"></i></button>
-        </div>
+<header class="inicio-corsair">
+    <img src="img/Logo-Corsair.png" alt="Corsair Logo" class="corsair">
 
-        <div class="nav-usuario">
-            <a href="login.html" class="btn-login-nav">
-                <i class="bi bi-person-circle"></i> Iniciar Sesion
-            </a>
-        </div>
-    </nav>
+    <div class="bienvenida">
+        <h1>EQUIPATE CON LO MEJOR</h1>
+        <p>Rendimiento extremo para jugadores profesionales</p>
+    </div>
 
-    <header class="inicio-corsair">
-        <img src="img/Logo-Corsair.png" alt="Corsair Logo" class="corsair">
+    <div class="contenedor-interactivo">
+        <a href="#vanguard-seccion" class="card-producto">
+            <img src="img/Teclados.png" alt="Icono Teclados">
+            <span>TECLADOS</span>
+        </a>
+        <a href="#mouse-seccion" class="card-producto">
+            <img src="img/Ratones.png" alt="Icono Ratones">
+            <span>RATONES</span>
+        </a>
+        <a href="#audifonos-seccion" class="card-producto">
+            <img src="img/audifonos.png" alt="Icono Audifonos">
+            <span>AUDIFONOS</span>
+        </a>
+    </div>
+</header>
 
-        <div class="bienvenida">
-            <h1>EQUIPATE CON LO MEJOR</h1>
-            <p>Rendimiento extremo para jugadores profesionales</p>
-        </div>
+<section id="vanguard-seccion" class="producto-detalle">
+    <div class="imagen-lado">
+        <img src="img/VANGUARD-PRO-96.png" alt="Vanguard Pro 96">
+    </div>
+    <div class="info-lado">
+        <h2>Teclado para juegos VANGUARD PRO 96 con efecto Hall</h2>
+        <ul class="lista-pro">
+            <li>Interruptores magneticos CORSAIR MGX Hyperdrive</li>
+            <li>Sondeo avanzado de 8.000 Hz para entradas ultrasensibles</li>
+            <li>Formato optimo y compacto de 96 %</li>
+            <li>Pantalla LCD vibrante integrada</li>
+            <li>Integracion con Elgato Virtual Stream Deck</li>
+        </ul>
+        <a href="#" class="btn-corsair">VER DETALLES</a>
+    </div>
+</section>
 
-        <div class="contenedor-interactivo">
-            <a href="#tabla-teclado" class="card-producto">
-                <img src="img/Teclados.png" alt="Icono Teclados">
-                <span>TECLADOS</span>
-            </a>
-            <a href="#tabla-mouse" class="card-producto">
-                <img src="img/Ratones.png" alt="Icono Ratones">
-                <span>RATONES</span>
-            </a>
-            <a href="#tabla-audifonos" class="card-producto">
-                <img src="img/audifonos.png" alt="Icono Audifonos">
-                <span>AUDIFONOS</span>
-            </a>
-        </div>
-    </header>
+<section id="mouse-seccion" class="producto-detalle">
+    <div class="imagen-lado">
+        <img src="img/Corsair-Scimitar-Elite.png" alt="Corsair Scimitar Elite">
+    </div>
+    <div class="info-lado">
+        <h2>Raton para juegos SCIMITAR RGB ELITE Optical MMO</h2>
+        <ul class="lista-pro">
+            <li>Sistema de control Key Slider personalizable</li>
+            <li>17 botones totalmente programables</li>
+            <li>Sensor optico nativo de 18.000 ppp</li>
+            <li>Estructura contorneada para maxima comodidad</li>
+            <li>Conmutadores Omron con capacidad para 50 millones de clics</li>
+        </ul>
+        <a href="#" class="btn-corsair">EXPLORAR MOUSE</a>
+    </div>
+</section>
 
-    <section class="tablas-datos">
+<section id="audifonos-seccion" class="producto-detalle">
+    <div class="imagen-lado">
+        <img src="img/Corsair-Hs80-Rgb.png" alt="Corsair HS80 RGB">
+    </div>
+    <div class="info-lado">
+        <h2>Auriculares con cable HS80 RGB USB High-Fidelity</h2>
+        <ul class="lista-pro">
+            <li>Audio Dolby Audio 7.1 envolvente</li>
+            <li>Transductores de audio de neodimio de 50 mm</li>
+            <li>Microfono omnidireccional de grado profesional</li>
+            <li>Almohadillas de espuma con memoria y tela transpirable</li>
+            <li>Iluminacion RGB dinamica y personalizada</li>
+        </ul>
+        <a href="#" class="btn-corsair">VER SONIDO</a>
+    </div>
+</section>
 
-        <!-- Tabla Teclado -->
-        <div id="tabla-teclado" class="tabla-producto">
-            <h3 class="titulo-tabla">TABLA DE DATOS TÉCNICOS Y DISPONIBILIDAD</h3>
-            <table class="datos-tecnicos">
-                <thead>
-                    <tr>
-                        <th>PRODUCTO</th>
-                        <th>MODELO</th>
-                        <th>PRECIO</th>
-                        <th>STOCK</th>
-                        <th>ACCIÓN</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>VANGUARD PRO 96 Keyboard</td>
-                        <td>MGX Hyperdrive</td>
-                        <td>$199.99</td>
-                        <td>15 unidades</td>
-                        <td><a href="#vanguard-seccion" class="btn-tabla">VER DETALLES</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div id="tabla-mouse" class="tabla-producto">
-            <h3 class="titulo-tabla">TABLA DE DATOS TÉCNICOS Y DISPONIBILIDAD</h3>
-            <table class="datos-tecnicos">
-                <thead>
-                    <tr>
-                        <th>PRODUCTO</th>
-                        <th>MODELO</th>
-                        <th>PRECIO</th>
-                        <th>STOCK</th>
-                        <th>ACCIÓN</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>SCIMITAR RGB ELITE Mouse</td>
-                        <td>Elite MMO</td>
-                        <td>$79.99</td>
-                        <td>25 unidades</td>
-                        <td><a href="#mouse-seccion" class="btn-tabla">VER DETALLES</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Tabla Audífonos -->
-        <div id="tabla-audifonos" class="tabla-producto">
-            <h3 class="titulo-tabla">TABLA DE DATOS TÉCNICOS Y DISPONIBILIDAD</h3>
-            <table class="datos-tecnicos">
-                <thead>
-                    <tr>
-                        <th>PRODUCTO</th>
-                        <th>MODELO</th>
-                        <th>PRECIO</th>
-                        <th>STOCK</th>
-                        <th>ACCIÓN</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HS80 RGB USB Headset</td>
-                        <td>High-Fidelity</td>
-                        <td>$129.99</td>
-                        <td>8 unidades</td>
-                        <td><a href="#audifonos-seccion" class="btn-tabla">VER DETALLES</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </section>
-
-    <section id="vanguard-seccion" class="producto-detalle">
-        <div class="imagen-lado">
-            <img src="img/VANGUARD-PRO-96.png" alt="Vanguard Pro 96">
-        </div>
-        <div class="info-lado">
-            <h2>Teclado para juegos VANGUARD PRO 96 con efecto Hall</h2>
-            <ul class="lista-pro">
-                <li>Interruptores magneticos CORSAIR MGX Hyperdrive</li>
-                <li>Sondeo avanzado de 8.000 Hz para entradas ultrasensibles</li>
-                <li>Formato optimo y compacto de 96 %</li>
-                <li>Pantalla LCD vibrante integrada</li>
-                <li>Integracion con Elgato Virtual Stream Deck</li>
-            </ul>
-            <a href="#" class="btn-corsair">COMPRAR AHORA</a>
-        </div>
-    </section>
-
-    <section id="mouse-seccion" class="producto-detalle">
-        <div class="imagen-lado">
-            <img src="img/Corsair-Scimitar-Elite.png" alt="Corsair Scimitar Elite">
-        </div>
-        <div class="info-lado">
-            <h2>Raton para juegos SCIMITAR RGB ELITE Optical MMO</h2>
-            <ul class="lista-pro">
-                <li>Sistema de control Key Slider personalizable</li>
-                <li>17 botones totalmente programables</li>
-                <li>Sensor optico nativo de 18.000 ppp</li>
-                <li>Estructura contorneada para maxima comodidad</li>
-                <li>Conmutadores Omron con capacidad para 50 millones de clics</li>
-            </ul>
-            <a href="#" class="btn-corsair">COMPRAR AHORA</a>
-        </div>
-    </section>
-
-    <section id="audifonos-seccion" class="producto-detalle">
-        <div class="imagen-lado">
-            <img src="img/Corsair-Hs80-Rgb.png" alt="Corsair HS80 RGB">
-        </div>
-        <div class="info-lado">
-            <h2>Auriculares con cable HS80 RGB USB High-Fidelity</h2>
-            <ul class="lista-pro">
-                <li>Audio Dolby Audio 7.1 envolvente</li>
-                <li>Transductores de audio de neodimio de 50 mm</li>
-                <li>Microfono omnidireccional de grado profesional</li>
-                <li>Almohadillas de espuma con memoria y tela transpirable</li>
-                <li>Iluminacion RGB dinamica y personalizada</li>
-            </ul>
-            <a href="#" class="btn-corsair">COMPRAR AHORA</a>
-        </div>
-    </section>
-
-    <section class="producto-detalle section-ayuda">
-        <div class="info-lado" style="text-align: center; flex: 1;">
-            <h2>¿NECESITAS AYUDA?</h2>
-            <p>Si tienes problemas con tu equipo, nuestro equipo tecnico esta listo para ayudarte.</p>
-            <br>
-            <a href="contacto.html" class="btn-corsair">IR A CONTACTO</a>
-        </div>
-    </section>
-
-</body>
-
-</html>
+<section class="producto-detalle section-ayuda">
+    <div class="info-lado" style="text-align: center; flex: 1;">
+        <h2>¿NECESITAS AYUDA?</h2>
+        <p>Si tienes problemas con tu equipo, nuestro equipo tecnico esta listo para ayudarte.</p>
+        <br>
+        <a href="contacto.html" class="btn-corsair">IR A CONTACTO</a>
+    </div>
+</section>
+</body> </html>
