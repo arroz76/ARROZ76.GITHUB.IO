@@ -1,9 +1,9 @@
-:root { 
-    --negro-puro: #000000; 
-    --gris-gunmetal: #121315; 
-    --amarillo: #F1D600; 
-    --blanco: #e5e5e5; 
-    --font: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+:root {
+    --negro-puro: #000000;
+    --gris-gunmetal: #121315;
+    --amarillo: #F1D600;
+    --blanco: #e5e5e5;
+    --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -232,81 +232,98 @@ a[href^="https://wa.me"] {
 }
 
 .tablas-datos {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    padding: 0 10% 40px;
+    min-height: 150px;
 }
 
 .tabla-producto {
     display: none;
-    width: 100%;
-    background-color: #0f0f0f;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 30px;
-    margin-top: 40px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-    animation: aparecerTabla 0.5s ease;
+    animation: fadeIn 0.4s ease;
 }
 
 .tabla-producto:target {
     display: block;
 }
 
-@keyframes aparecerTabla {
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 .titulo-tabla {
-    color: var(--amarillo);
     text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    color: var(--amarillo);
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .datos-tecnicos {
     width: 100%;
     border-collapse: collapse;
-    color: white;
-    text-align: center;
+    background: rgba(18, 19, 21, 0.9);
+    border: 2px solid var(--amarillo);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.datos-tecnicos thead {
+    background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
 }
 
 .datos-tecnicos th {
-    color: #888;
-    border-bottom: 2px solid #333;
-    padding: 15px 10px;
+    color: var(--amarillo);
+    padding: 18px 15px;
+    text-align: center;
     font-size: 0.85rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--amarillo);
+    border-right: 1px solid #333;
+    text-transform: uppercase;
+}
+
+.datos-tecnicos th:last-child {
+    border-right: none;
 }
 
 .datos-tecnicos td {
-    padding: 20px 10px;
-    border-bottom: 1px solid #1a1a1a;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 20px 15px;
+    text-align: center;
+    color: var(--blanco);
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    font-size: 0.95rem;
 }
 
-.btn-tabla,
-.btn-tabla:visited {
-    background-color: var(--amarillo);
-    color: black !important;
-    padding: 10px 20px;
+.datos-tecnicos td:last-child {
+    border-right: none;
+}
+
+.datos-tecnicos tbody tr:hover {
+    background: rgba(241, 214, 0, 0.08);
+}
+
+.btn-tabla {
+    display: inline-block;
+    background: var(--amarillo);
+    color: #000 !important;
+    padding: 10px 25px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
-    transition: 0.3s;
-    font-size: 0.85rem;
-    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--amarillo);
+    text-transform: uppercase;
 }
 
 .btn-tabla:hover {
-    background-color: white;
-    box-shadow: 0 0 15px rgba(241, 214, 0, 0.6);
+    background: transparent;
+    color: var(--amarillo) !important;
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(241, 214, 0, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -328,5 +345,25 @@ a[href^="https://wa.me"] {
     .contenedor-interactivo {
         flex-direction: row;
         gap: 20px;
+    }
+    
+    .tablas-datos {
+        padding: 0 5% 30px;
+    }
+
+    .titulo-tabla {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .datos-tecnicos th,
+    .datos-tecnicos td {
+        padding: 12px 8px;
+        font-size: 0.75rem;
+    }
+
+    .btn-tabla {
+        padding: 8px 12px;
+        font-size: 0.7rem;
     }
 }
