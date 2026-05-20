@@ -224,7 +224,7 @@ body {
     transform: scale(1.05);
 }
 
-.info-lado a, 
+.info-lado a,
 a[href^="tel"],
 a[href^="https://wa.me"] {
     color: var(--amarillo) !important;
@@ -250,5 +250,130 @@ a[href^="https://wa.me"] {
     .contenedor-interactivo {
         flex-direction: row;
         gap: 20px;
+    }
+}
+
+.tablas-datos {
+    padding: 0 10% 40px;
+    min-height: 150px;
+}
+
+.tabla-producto {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.tabla-producto:target {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-tabla {
+    text-align: center;
+    color: var(--amarillo);
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.datos-tecnicos {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(18, 19, 21, 0.9);
+    border: 2px solid var(--amarillo);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.datos-tecnicos thead {
+    background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+}
+
+.datos-tecnicos th {
+    color: var(--amarillo);
+    padding: 18px 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--amarillo);
+    border-right: 1px solid #333;
+    text-transform: uppercase;
+}
+
+.datos-tecnicos th:last-child {
+    border-right: none;
+}
+
+.datos-tecnicos td {
+    padding: 20px 15px;
+    text-align: center;
+    color: var(--blanco);
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    font-size: 0.95rem;
+}
+
+.datos-tecnicos td:last-child {
+    border-right: none;
+}
+
+.datos-tecnicos tbody tr:hover {
+    background: rgba(241, 214, 0, 0.08);
+}
+
+.btn-tabla {
+    display: inline-block;
+    background: var(--amarillo);
+    color: #000 !important;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--amarillo);
+    text-transform: uppercase;
+}
+
+.btn-tabla:hover {
+    background: transparent;
+    color: var(--amarillo) !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(241, 214, 0, 0.4);
+}
+
+
+@media (max-width: 768px) {
+    .tablas-datos {
+        padding: 0 5% 30px;
+    }
+
+    .titulo-tabla {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .datos-tecnicos th,
+    .datos-tecnicos td {
+        padding: 12px 8px;
+        font-size: 0.75rem;
+    }
+
+    .btn-tabla {
+        padding: 8px 12px;
+        font-size: 0.7rem;
     }
 }
